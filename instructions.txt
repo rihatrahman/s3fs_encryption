@@ -1,0 +1,20 @@
+Command to compile
+gcc -o rc4 rc4.c -lcrypto
+
+Commands to Encrypt and Decrypt using standalone RC4
+./rc4 -e input.txt enc.txt key nosalt
+./rc4 -d enc.txt dec.txt key nosalt
+
+./rc -e input.txt enc.txt key salt
+./rc -d enc.txt dec.txt key salt
+
+Mount: sudo s3fs -o allow_other a-test-bucket-124568d /s3/bucket-test
+Unmount: umount /s3/ bucket-test/
+
+
+OpenSSL commands
+openssl rc4 -e -k key -in input.txt -out out.txt -nosalt
+openssl rc4 -d -k key -in out.txt -out dec.txt -nosalt
+
+openssl rc4 -e -k key -in input.txt -out hey.txt
+openssl rc4 -d -k key -in out.txt -out test.txt
