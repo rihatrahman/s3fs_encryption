@@ -1,4 +1,4 @@
 # s3fs_encryption
-The goal of this project is to integrate rc4 encryption with Amazon’s s3fs cloud system so whenever the user uploads a file to the cloud, it will be encrypted automatically. After the user downloads the file, it can be decypted using the same program.
+This project aims to encrypt files uploaded to Amazon's S3 cloud storage using RC4 encryption. The uploaded files will be automatically encrypted, ensuring their confidentiality. Users can then decrypt the downloaded files with the same program, granting them secure access to their data.
 
 Technology Stack: AWS s3fs, C
